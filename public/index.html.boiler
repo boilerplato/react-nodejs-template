@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="A Boilerplato template for React and Nodejs" />
+    <meta name="description" content="{{ appDescription }}" />
     <link rel="manifest" href="/manifest.json" />
-    <title>React Node.js Template</title>
+    <title>{{ appName }}</title>
 </head>
 
 <body>

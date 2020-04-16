@@ -1,6 +1,6 @@
 {
-  "short_name": "ReactNodejsTemplate",
-  "name": "ReactNodejsTemplate",
+  "short_name": "{{ appName }}",
+  "name": "{{ appName }}",
   "icons": [
     {
       "src": "favicon.ico",

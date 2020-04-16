@@ -1,8 +1,8 @@
 {
-  "name": "react-nodejs-template",
+  "name": "{{ appName }}",
   "private": true,
-  "version": "1.0.0",
-  "description": "A Boilerplato template for React and Nodejs",
+  "version": "{{ appVersion }}",
+  "description": "{{ appDescription }}",
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
     "start": "npm run build && node src/server/index.js",
@@ -10,8 +10,13 @@
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "Rousan Ali <rousanali786@gmail.com> (https://rousan.io)",
-  "license": "MIT",
+  {{#if author}}
+  "author": "{{ author }}",
+  {{/if}}
+  "license": "{{ license }}",
+  {{#if homepage}}
+  "homepage": "{{ homepage }}",
+  {{/if}}
   "browserslist": {
     "production": [
       ">0.2%",
@@ -25,7 +30,9 @@
     ]
   },
   "dependencies": {
+    {{#if isAntdIncluded}}
     "antd": "^3.26.15",
+    {{/if}}
     "babel-polyfill": "^6.26.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -73,7 +80,11 @@
     "url-loader": "^4.1.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
+    {{#if isWorkerIncluded}}
     "webpack-dev-server": "^3.10.3",
     "worker-loader": "^2.0.0"
+    {{else}}
+    "webpack-dev-server": "^3.10.3"
+    {{/if}}
   }
 }
