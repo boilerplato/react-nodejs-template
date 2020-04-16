@@ -4,8 +4,9 @@ webpack.config.prod.js
 webpack.config.dev.js
 README.md
 .babelrc
-public/index.html
-public/manifest.json
+/public/index.html
+/public/manifest.json
+.env
 
 # Others
 yarn.lock

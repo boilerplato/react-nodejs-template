@@ -9,12 +9,10 @@
     "client": "webpack-dev-server --config webpack.config.dev.js --hot",
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
-  },
-  {{#if author}}
+  },{{#if author}}
   "author": "{{ author }}",
   {{/if}}
-  "license": "{{ license }}",
-  {{#if homepage}}
+  "license": "{{ license }}",{{#if homepage}}
   "homepage": "{{ homepage }}",
   {{/if}}
   "browserslist": {
@@ -29,8 +27,7 @@
       "last 1 safari version"
     ]
   },
-  "dependencies": {
-    {{#if isAntdIncluded}}
+  "dependencies": { {{#if isAntdIncluded}}
     "antd": "^3.26.15",
     {{/if}}
     "babel-polyfill": "^6.26.0",
@@ -79,11 +76,9 @@
     "style-loader": "^1.1.4",
     "url-loader": "^4.1.0",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11",
-    {{#if isWorkerIncluded}}
+    "webpack-cli": "^3.3.11",{{#if isWorkerIncluded}}
     "webpack-dev-server": "^3.10.3",
-    "worker-loader": "^2.0.0"
-    {{else}}
+    "worker-loader": "^2.0.0"{{else}}
     "webpack-dev-server": "^3.10.3"
     {{/if}}
   }

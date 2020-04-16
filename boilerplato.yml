@@ -39,3 +39,14 @@ data:
     message: "Do you want the Ant Design to be included?"
     required: false
     defaultValue: false
+postGenerate: npm install
+helpText:
+  - "Inside that directory, you can run several commands:\n"
+  - '  {{ color "npm run dev" "cyan" }}'
+  - "    Starts the development server.\n"
+  - '  {{ color "npm run build" "cyan" }}'
+  - "    Bundles the app into static files for production.\n"
+  - "We suggest that you begin by typing:\n"
+  - '  {{ color "cd" "cyan" }} $APP_REL_PATH'
+  - '  {{ color "npm run dev" "cyan" }}'
+  - "\n"

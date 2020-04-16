@@ -33,8 +33,7 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
-      },
-      {{#if isWorkerIncluded}}
+      },{{#if isWorkerIncluded}}
       {
         test: /\.worker\.js$/,
         use: {
@@ -43,8 +42,7 @@ module.exports = {
             name: 'static/js/[name].[hash].worker.js'
           }
         }
-      },
-      {{/if}}
+      },{{/if}}
       {
         test: /\.(s*)css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
