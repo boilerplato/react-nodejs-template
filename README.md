@@ -1,6 +1,6 @@
-# React + Nodejs Template
+# React + Router + Redux + Nodejs Template
 
-A `Boilerplato` template for React and Nodejs.
+A [Boilerplato](https://github.com/boilerplato/boilerplato) template for `React` and `Nodejs` with `Redux` and `React-Router` integrated by default.
 
 ## Usage
 
