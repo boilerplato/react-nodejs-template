@@ -1,4 +1,4 @@
-# Files to be generated from their .boiler files
+# Ignore these files as these will be generated from their .boiler files
 package.json
 webpack.config.prod.js
 webpack.config.dev.js
