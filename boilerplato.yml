@@ -29,14 +29,14 @@ data:
     message: "App homepage?"
     required: false
     defaultValue: ""
-  - name: isWorkerIncluded
-    type: bool
-    message: "Do you want the Worker Loader to be included?"
-    required: false
-    defaultValue: false
   - name: isAntdIncluded
     type: bool
     message: "Do you want the Ant Design to be included?"
+    required: false
+    defaultValue: false
+  - name: isWorkerIncluded
+    type: bool
+    message: "Do you want the webpack worker-loader to be included?"
     required: false
     defaultValue: false
 postGenerate: npm install
