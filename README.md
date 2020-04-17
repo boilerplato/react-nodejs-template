@@ -9,7 +9,7 @@ First install `Boilerplato` from [here](https://github.com/boilerplato/boilerpla
 Then run,
 
 ```sh
-boilerplato my-awesome-app --template react-nodejs-template
+$ boilerplato my-awesome-app --template react-nodejs-template
 ```
 
 ## Contributing
