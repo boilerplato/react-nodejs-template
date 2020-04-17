@@ -10,7 +10,7 @@
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },{{#if author}}
-  "author": "{{ author }}",
+  "author": "{{{ author }}}",
   {{/if}}
   "license": "{{ license }}",{{#if homepage}}
   "homepage": "{{ homepage }}",
