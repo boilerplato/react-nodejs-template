@@ -6,11 +6,7 @@ README.md
 .babelrc
 /public/index.html
 /public/manifest.json
-.env
 
 # Others
-yarn.lock
 /node_modules
-package-lock.json
-.DS_Store
 LICENSE
