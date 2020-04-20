@@ -11,6 +11,9 @@ Then run,
 ```sh
 $ boilerplato my-awesome-app --template react-nodejs-template
 ```
+## Todo
+- Ask user whether `Redux` should be added or not instead of default.
+- Ask user whether `React Router` should be added or not instead of default.
 
 ## Contributing
 
